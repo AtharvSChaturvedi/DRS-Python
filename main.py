@@ -19,7 +19,7 @@ class DRS:
         self.canvas=tk.Canvas(self.win, width=self.width, height=self.height)
         self.img_canvas=self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
         self.canvas.pack()
-        self.stream=cv2.VideoCapture("clip.mp4")
+        self.stream=cv2.VideoCapture("clip.mp4") #Your filename
 
         # Buttons
         self.button1=tk.Button(self.win, text="<<Previous(fast)", width=50, command=partial(self.play, -25))
